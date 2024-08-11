@@ -5,7 +5,15 @@
     font-family: Arial, sans-serif;
     color: #333;
 }
-
+.flex-grow-1{
+    max-width: 90%;
+    margin-left: 35px;
+    margin-bottom: 5px;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
 .header, .footer {
     height: 50px;  /* Adjust the height as needed */
 }
@@ -110,4 +118,17 @@ h2 {
     left: 0;
     width: 100%;
 }
+img{
+    margin-left: 100px;
+    height: 50px;
+    width:300px;
+}
+.hero{
+    margin-top: 2px;
+    height: 150px;
+}
+/* .hero {
+   background: linear-gradient(rgba(44, 125, 89, 0.8), rgba(44, 125, 89, 0.8)), url('/path-to-your-hero-image.jpg') no-repeat center center;
+  background-size : cover;
+} */
   

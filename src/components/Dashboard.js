@@ -196,9 +196,9 @@ const Dashboard = () => {
                 </div>
             </main>
 
-            <footer className="bg-light text-center py-3 mt-5 fixed-bottom">
-                <p>&copy; 2024 GreenScore. All rights reserved.</p>
-            </footer>
+            <footer className="bg-dark text-light text-center py-3 fixed-bottom">
+        <p className="mb-0">&copy; 2024 EcoIncentive. All rights reserved.</p>
+      </footer>
         </div>
     );
 };

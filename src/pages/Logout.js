@@ -11,7 +11,7 @@ const Logout = () => {
     delete localStorage.users.sessionData; // Adjust based on your actual session data structure
 
     // Redirect to login page after logout
-    navigate('/login', { replace: true });
+    navigate('/', { replace: true });
   }, [navigate]);
 
   return null; // Render nothing, just perform side effects

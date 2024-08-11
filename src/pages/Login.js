@@ -90,6 +90,8 @@ import { findUserByEmailAndPassword } from './mockData.js'; // Ensure this funct
 import { useNavigate } from 'react-router-dom';
 import './Auth.css';
 
+
+
 const Login = () => {
     const [formData, setFormData] = useState({
         email: '',
