@@ -127,7 +127,7 @@ const Home = () => {
         </div>
       </main>
 
-      <footer className="bg-dark text-light text-center py-3">
+      <footer className="bg-dark text-light text-center py-3 fixed-bottom">
         <p className="mb-0">&copy; 2024 EcoIncentive. All rights reserved.</p>
       </footer>
     </div>
