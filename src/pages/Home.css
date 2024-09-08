@@ -128,7 +128,7 @@ h2 {
 }
 
 .hero {
-  background-image: url('D:/Green_Score_System/green-score-frontend/public/Gemini_Generated_Image_jw9g3yjw9g3yjw9g.jpg');
+  background-image: url("../../public/Gemini_Generated_Image_jw9g3yjw9g3yjw9g.jpg");
   background-size: cover;
   background-position: center;
   height: 400px;
