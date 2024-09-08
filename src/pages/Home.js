@@ -32,9 +32,10 @@ const Home = () => {
         </div>
       </nav>
 
-      <header className="hero text-center text-black py-5">
-        <div className="container">
-          <h2 className="display-4 fw-bold mt-5">Welcome to EcoIncentive</h2>
+      <header className="hero">
+        <div className="hero-content">
+          <h1 className="hero-title">Welcome to EcoIncentive</h1>
+          <p className="hero-subtitle">Empowering sustainable financial decisions</p>
         </div>
       </header>
 
@@ -55,61 +56,61 @@ const Home = () => {
               <img
                 src="/green.jpg"
                 alt="Green Finance"
-                className="img-fluid rounded shadow"
+                className="img-fluid rounded shadow eco-image"
               />
             </div>
           </section>
 
           <section className="row mb-5">
-            {[
-              {
-                title: "For Individuals",
-                items: [
-                  "Personal sustainability scoring",
-                  "Eco-friendly product recommendations",
-                  "Carbon footprint tracking"
-                ],
-                link: "/individualscore",
-                buttonText: "Calculate Your Score"
-              },
-              {
-                title: "For Businesses",
-                items: [
-                  "Corporate sustainability assessment",
-                  "ESG reporting tools",
-                  "Supply chain impact analysis"
-                ],
-                link: "/enterprisescore",
-                buttonText: "Assess Your Business"
-              },
-              {
-                title: "For Investors",
-                items: [
-                  "Green investment opportunities",
-                  "Sustainable portfolio analysis",
-                  "Impact investing metrics"
-                ],
-                link: "/investorscore",
-                buttonText: "Evaluate Your Portfolio"
-              }
-            ].map((card, index) => (
-              <div key={index} className="col-lg-4 col-md-6 mb-4">
-                <div className="card h-100 shadow-sm">
-                  <div className="card-body d-flex flex-column">
-                    <h3 className="card-title">{card.title}</h3>
-                    <ul className="list-unstyled flex-grow-1">
-                      {card.items.map((item, i) => (
-                        <li key={i}>✔ {item}</li>
-                      ))}
-                    </ul>
-                    <Link to={card.link} className="btn btn-success mt-auto">
-                      {card.buttonText}
-                    </Link>
-                  </div>
-                </div>
-              </div>
+  {[
+    {
+      title: "For Individuals",
+      items: [
+        "Personal sustainability scoring",
+        "Eco-friendly product recommendations",
+        "Carbon footprint tracking"
+      ],
+      link: "/individualscore",
+      buttonText: "Calculate Your Score"
+    },
+    {
+      title: "For Businesses",
+      items: [
+        "Corporate sustainability assessment",
+        "ESG reporting tools",
+        "Supply chain impact analysis"
+      ],
+      link: "/enterprisescore",
+      buttonText: "Assess Your Business"
+    },
+    {
+      title: "For Investors",
+      items: [
+        "Green investment opportunities",
+        "Sustainable portfolio analysis",
+        "Impact investing metrics"
+      ],
+      link: "/investorscore",
+      buttonText: "Evaluate Your Portfolio"
+    }
+  ].map((card, index) => (
+    <div key={index} className="col-lg-4 col-md-6 mb-4">
+      <div className="card h-100 shadow">
+        <div className="card-body d-flex flex-column">
+          <h3 className="card-title">{card.title}</h3>
+          <ul className="list-unstyled flex-grow-1">
+            {card.items.map((item, i) => (
+              <li key={i} className="mb-2">✔ {item}</li>
             ))}
-          </section>
+          </ul>
+          <Link to={card.link} className="btn btn-success mt-auto">
+            {card.buttonText}
+          </Link>
+        </div>
+      </div>
+    </div>
+  ))}
+</section>
 
           <section className="text-center mb-5">
             <h2 className="mb-4">Join the Green Finance Revolution</h2>
@@ -126,7 +127,7 @@ const Home = () => {
         </div>
       </main>
 
-      <footer className="bg-dark text-light text-center py-3 fixed-bottom">
+      <footer className="bg-dark text-light text-center py-3">
         <p className="mb-0">&copy; 2024 EcoIncentive. All rights reserved.</p>
       </footer>
     </div>
