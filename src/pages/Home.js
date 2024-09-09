@@ -35,7 +35,7 @@ const Home = () => {
       <header className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Welcome to EcoIncentive</h1>
-          <p className="hero-subtitle">Empowering sustainable financial decisions</p>
+          <p className="hero-subtitle">Empowering sustainable decisions</p>
         </div>
       </header>
 
@@ -45,7 +45,7 @@ const Home = () => {
             <div className="col-lg-6">
               <h2 className="mb-4">What is EcoIncentive?</h2>
               <p className="lead">
-                EcoIncentive is a cutting-edge fintech platform that helps
+                EcoIncentive is a cutting-edge platform that helps
                 individuals and businesses measure, track, and improve their
                 environmental impact. By analyzing financial transactions and
                 sustainability practices, we provide personalized green scores and
@@ -113,9 +113,9 @@ const Home = () => {
 </section>
 
           <section className="text-center mb-5">
-            <h2 className="mb-4">Join the Green Finance Revolution</h2>
+            <h2 className="mb-4">Join the Green Revolution</h2>
             <p className="lead mb-4">
-              Start your journey towards a more sustainable financial future today.
+              Start your journey towards a more sustainable future today.
             </p>
             <Link to="/register" className="btn btn-success btn-lg me-3">
               Get Started
